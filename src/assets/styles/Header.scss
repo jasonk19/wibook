@@ -1,0 +1,29 @@
+.header {
+  padding: 70px 0;
+  text-align: center;
+  h1 {
+    font-weight: 500;
+    color: #3b3838;
+    font-size: 42px;
+    z-index: 5;
+    position: relative;
+    .title {
+      color: #f0f0f0;
+    }
+    .subtitle {
+      font-size: 32px;
+      margin-left: 25px;
+    }
+    strong {
+      color: #000000;
+    }
+  }
+  .blob {
+    width: 20em;
+    top: -60px;
+    left: 290px;
+    position: absolute;
+    z-index: 1;
+  }
+
+}

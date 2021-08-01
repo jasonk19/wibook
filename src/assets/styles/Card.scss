@@ -1,0 +1,23 @@
+.Card {
+  background-color: #58199c;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all .3s ease-out;
+  width: 20em;
+  a {
+    text-decoration: none;
+    figure {
+      display: flex;
+      justify-content: center;
+    }
+    h3 {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 24px;
+    }
+  }
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

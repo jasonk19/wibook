@@ -1,0 +1,15 @@
+.TopAnime {
+  margin-top: 5px;
+  margin-left: 50px;
+  width: 100%;
+  h1 {
+    font-size: 48px;
+  }
+  .main-content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+  }
+}
