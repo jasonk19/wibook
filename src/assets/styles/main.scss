@@ -1,3 +1,5 @@
+@import './responsive.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +11,8 @@
 .content-wrap {
   padding: 30px 10em;
   display: flex;
+  @include respond-to('phone') {
+    flex-direction: column;
+    padding: 0 20px;
+  }
 }

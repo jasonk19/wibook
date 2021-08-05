@@ -1,0 +1,15 @@
+$breakpoints: (
+  'phone': 720px,
+) !default;
+
+@mixin respond-to($used_breakpoints...){
+  @each $breakpoint in $used_breakpoints {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint ) {
+      @if $breakpoint == 'phone' {
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+          @content;
+        }
+      }
+    }
+  } 
+}

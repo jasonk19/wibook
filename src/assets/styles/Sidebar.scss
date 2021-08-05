@@ -1,7 +1,18 @@
+@import './responsive.scss';
+
 .Sidebar {
   width: 13em;
   z-index: 3;
+  @include respond-to('phone') {
+    width: 100%;
+  }
   ul {
+    @include respond-to('phone') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 20px;
+    }
     .nav-link {
       text-decoration: none;
     }
@@ -15,11 +26,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include respond-to('phone') {
+        width: 8em;
+      }
       p {
         font-size: 20px;
         color: #fff;
         text-align: center;
         font-weight: 500;
+        @include respond-to('phone') {
+          font-size: 16px;
+        }
       }
     }
   }

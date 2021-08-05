@@ -1,15 +1,24 @@
+@import './responsive.scss';
+
 .TopManga {
   margin-top: 5px;
   margin-left: 50px;
   width: 100%;
+  @include respond-to('phone') {
+    margin: 0;
+  }
   h1 {
     font-size: 48px;
+    @include respond-to('phone') {
+      font-size: 32px;
+      text-align: center;
+    }
   }
   .main-content {
-    margin-top: 15px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 20px;
     justify-content: center;
+    margin: 15px 0;
   }
 }
